@@ -1,0 +1,24 @@
+{
+  "name": "hexo-generator-restful",
+  "version": "0.0.1",
+  "description": "Generate restful json data. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "hexo",
+    "restful",
+    "jsond",
+    "generator"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yscoder/hexo-generator-restful.git"
+  },
+  "author": "yusen",
+  "license": "MIT",
+  "dependencies": {
+    "hexo-pagination": "0.0.2"
+  }
+}

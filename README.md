@@ -4,6 +4,12 @@ Generate restful json data for Hexo plugins.
 
 生成 restful 风格的 json 数据，可以当作 api 接口，开始构建一个 SPA 应用吧。
 
+## Install
+
+```
+npm install hexo-generator-restful --save
+```
+
 ## Config
 
 以下为默认配置，属性值为 `false` 表示不生成。

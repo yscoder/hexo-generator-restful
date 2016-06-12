@@ -1,5 +1,7 @@
 # hexo-generator-restful
+
 Generate restful json data for Hexo plugins.
+
 生成 restful 风格的 json 数据，可以当作 api 接口，开始构建一个 SPA 应用吧。
 
 ## Config
@@ -33,13 +35,13 @@ restful:
 
 获取所有 Hexo 配置（站点配置和主题配置）。
 
-#### Request
+###### Request
 
 ```
 GET /api/site.json
 ```
 
-#### Response
+###### Response
 
 [/api/site.json](http://www.imys.net/api/site.json)
 
@@ -47,13 +49,13 @@ GET /api/site.json
 
 如果配置 `posts_size: 0` 则不分页，以下请求会获取全部文章。
 
-#### Request
+###### Request
 
 ```
 GET /api/posts.json
 ```
 
-#### Response
+###### Response
 
 示例为分页配置下的数据，会包含分页属性 `total`、`pageSize`、`pageCount`，不分页的数据不包含这三项。
 
@@ -63,13 +65,13 @@ GET /api/posts.json
 
 获取分页数据
 
-#### Request
+###### Request
 
 ```
 GET /api/posts/:PageNum.json
 ```
 
-#### Response
+###### Response
 
 [/api/posts/1.json](http://www.imys.net/api/posts/1.json)
 
@@ -77,13 +79,13 @@ GET /api/posts/:PageNum.json
 
 获取所有文章标签，如果文章无标签则不生成。
 
-#### Request
+###### Request
 
 ```
 GET /api/tags.json
 ```
 
-#### Response
+###### Response
 
 [/api/tags.json](http://www.imys.net/api/tags.json)
 
@@ -91,13 +93,13 @@ GET /api/tags.json
 
 获取某一标签下的所有文章
 
-#### Request
+###### Request
 
 ```
 GET /api/tags/:TagName.json
 ```
 
-#### Response
+###### Response
 
 [/api/tags/Hexo.json](http://www.imys.net/api/tags/Hexo.json)
 
@@ -105,13 +107,13 @@ GET /api/tags/:TagName.json
 
 获取所有文章标签，如果文章无标签则不生成。
 
-#### Request
+###### Request
 
 ```
 GET /api/categories.json
 ```
 
-#### Response
+###### Response
 
 数据格式同 Get All Tags
 
@@ -119,13 +121,13 @@ GET /api/categories.json
 
 获取某一分类下的所有文章
 
-#### Request
+###### Request
 
 ```
 GET /api/categories/:CategorieName.json
 ```
 
-#### Response
+###### Response
 
 数据格式同 Get Posts By Tag
 
@@ -133,12 +135,12 @@ GET /api/categories/:CategorieName.json
 
 根据文章别名获取文章详细信息
 
-#### Request
+###### Request
 
 ```
 GET /api/articles/:Slug.json
 ```
 
-#### Response
+###### Response
 
 [/api/articles/javascript-advanced-functions.json](http://www.imys.net/api/articles/javascript-advanced-functions.json)

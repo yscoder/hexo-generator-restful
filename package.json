@@ -1,7 +1,7 @@
 {
   "name": "hexo-generator-restful",
-  "version": "0.0.1",
-  "description": "Generate restful json data. ",
+  "version": "0.0.3",
+  "description": "Generate restful json data for Hexo plugins.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

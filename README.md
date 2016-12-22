@@ -6,7 +6,7 @@ Generate restful json data for Hexo plugins.
 
 ## Install
 
-```
+```bash
 npm install hexo-generator-restful --save
 ```
 
@@ -14,8 +14,10 @@ npm install hexo-generator-restful --save
 
 以下为默认配置，属性值为 `false` 表示不生成。
 
-```
+```yml
 restful:
+  # site 可配置为数组选择性生成某些属性
+  # site: ['title', 'subtitle', 'description', 'author', 'since', email', 'favicon', 'avatar']
   site: true        # hexo.config mix theme.config
   posts_size: 10    # 文章列表分页，0 表示不分页
   posts_props:      # 文章列表项的需要生成的属性
@@ -111,7 +113,7 @@ GET /api/tags/:TagName.json
 
 ### Get All Categories
 
-获取所有文章标签，如果文章无标签则不生成。
+获取所有文章分类，如果文章无分类则不生成。
 
 ###### Request
 

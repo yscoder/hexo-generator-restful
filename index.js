@@ -3,5 +3,6 @@
 var generator = require('./lib/generator');
 
 hexo.extend.generator.register('restful', function(site) {
-    return generator(Object.assign(hexo.config, hexo.theme.config), site);
+    let {config,theme:{config:themeConfig}} = hexo;
+    return generator(Object.assign(config, themeConfig), site);
 });

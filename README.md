@@ -28,6 +28,7 @@ restful:
     comments: true
     path: true
     excerpt: false
+    cover: true
     content: false
     keywords: false
     categories: true

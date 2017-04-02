@@ -28,7 +28,7 @@ restful:
     comments: true
     path: true
     excerpt: false
-    cover: true
+    cover: true      # 封面图，取文章第一张图片
     content: false
     keywords: false
     categories: true

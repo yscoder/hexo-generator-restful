@@ -1,11 +1,8 @@
 {
   "name": "hexo-generator-restful",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Generate restful json data for Hexo plugins.",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": [
     "hexo",
     "restful",
@@ -19,7 +16,7 @@
   "author": "yusen",
   "license": "MIT",
   "dependencies": {
-    "hexo-pagination": "0.0.2",
+    "hexo-pagination": "^0.1.0",
     "lodash.pick": "^4.4.0"
   }
 }

@@ -28,6 +28,7 @@ restful:
     comments: true
     path: true
     excerpt: false
+    cover: true
     content: false
     keywords: false
     categories: true
@@ -35,6 +36,7 @@ restful:
   categories: true  # 分类数据
   tags: true        # 标签数据
   post: true        # 文章数据
+  pages: false      # 额外的 Hexo 页面数据, 如 About
 ```
 
 ## Document
@@ -152,3 +154,19 @@ GET /api/articles/:Slug.json
 ###### Response
 
 [/api/articles/javascript-advanced-functions.json](http://www.imys.net/api/articles/javascript-advanced-functions.json)
+
+### Get Implecit Pages
+
+获取来自主题的 Hexo 隐式页面内容，如 About 等。因隐式页面（除 About 等导航栏入口页外）一般在 Hexo 不提供直接访问入口，调用此 API 的开发者需要了解其完整路径，此接口默认关闭。
+
+例如: 
+
+###### Request
+
+```
+GET /api/pages/about.json
+```
+
+###### Response
+
+格式类似于于 Get Post By Slug。

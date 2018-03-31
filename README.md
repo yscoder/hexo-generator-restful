@@ -33,10 +33,12 @@ restful:
     keywords: false
     categories: true
     tags: true
-  categories: true  # 分类数据
-  tags: true        # 标签数据
-  post: true        # 文章数据
-  pages: false      # 额外的 Hexo 页面数据, 如 About
+  categories: true         # 分类数据
+  use_category_slug: false # Use slug for filename of category data
+  tags: true               # 标签数据
+  use_tag_slug: false      # Use slug for filename of tag data
+  post: true               # 文章数据
+  pages: false             # 额外的 Hexo 页面数据, 如 About
 ```
 
 ## Document

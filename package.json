@@ -1,22 +1,17 @@
 {
-  "name": "hexo-generator-restful",
-  "version": "0.2.1",
-  "description": "Generate restful json data for Hexo plugins.",
-  "main": "index.js",
-  "keywords": [
-    "hexo",
-    "restful",
-    "json",
-    "generator"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/yscoder/hexo-generator-restful.git"
-  },
-  "author": "yusen",
-  "license": "MIT",
-  "dependencies": {
-    "hexo-pagination": "^0.1.0",
-    "lodash.pick": "^4.4.0"
-  }
+    "name": "hexo-generator-restful",
+    "version": "0.2.3",
+    "description": "Generate restful json data for Hexo plugins.",
+    "main": "index.js",
+    "keywords": ["hexo", "restful", "json", "generator"],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/yscoder/hexo-generator-restful.git"
+    },
+    "author": "yusen",
+    "license": "MIT",
+    "dependencies": {
+        "hexo-pagination": "^0.1.0",
+        "lodash.pick": "^4.4.0"
+    }
 }

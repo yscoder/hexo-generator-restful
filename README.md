@@ -27,6 +27,7 @@ restful:
     updated: true
     comments: true
     path: true
+    permalink: true
     excerpt: false
     cover: true      # 封面图，取文章第一张图片
     content: false

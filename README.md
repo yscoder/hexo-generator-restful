@@ -39,6 +39,11 @@ restful:
   use_tag_slug: false      # Use slug for filename of tag data
   post: true               # 文章数据
   pages: false             # 额外的 Hexo 页面数据, 如 About
+  pages_exclude:           # 排除页面，如 lib
+    - lib
+    - images
+    - css
+    - js
 ```
 
 ## Document
